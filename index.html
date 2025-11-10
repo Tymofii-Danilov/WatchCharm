@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Watch Charm</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="/index.html" class="logo">watchcharm</a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link current">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-us" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#catalog" class="nav-link">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sale" class="nav-link">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactus" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="header-socials">
+            <li>
+              <a href="facebook.com" class="header-socials-icon">
+                <svg width="20" height="20">
+                  <use href="./img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="instagram.com" class="header-socials-icon">
+                <svg width="20" height="20">
+                  <use href="./img/sprite.svg#ig"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="youtube.com" class="header-socials-icon">
+                <svg width="20" height="20">
+                  <use href="./img/sprite.svg#yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button data-menu-open type="button" class="menu-btn">
+          <svg class="menu-icon" width="34" height="34">
+            <use href="./img/sprite.svg#bg"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-text-wrapper">
+              <h1 class="hero-title">
+                Welcome to our <span class="accent">collection</span> of premium
+                watches
+              </h1>
+              <p class="hero-text">
+                Our watches are not just timepieces, but also an expression of
+                your personality and lifestyle. From classic designs to modern
+                ones, we have a watch to suit every taste and occasion.
+              </p>
+            </div>
+            <div class="hero-avatars-wrapper">
+              <ul class="hero-avatars-list">
+                <li class="hero-avatars-item">
+                  <img
+                    class="hero-avatars"
+                    src="./img/Viktoria.png"
+                    alt="Viktoria"
+                    max-width="60px"
+                  />
+                </li>
+                <li class="hero-avatars-item">
+                  <img
+                    class="hero-avatars"
+                    src="./img/John.png"
+                    alt="John"
+                    max-width="60px"
+                  />
+                </li>
+                <li class="hero-avatars-item">
+                  <img
+                    class="hero-avatars"
+                    src="./img/Anastasia.png"
+                    alt="Anastasia"
+                    max-width="60px"
+                  />
+                </li>
+              </ul>
+              <a href="#about-us" class="hero-scroll">Scroll down</a>
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/hero_pc.jpg 1x, ./img/hero_pc@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/hero_tab.jpg 1x, ./img/hero_tab@2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/hero_mob.jpg 1x, ./img/hero_mob@2x.jpg 2x"
+            />
+            <img
+              src="./img/hero_mob.jpg"
+              alt="Watch Charm"
+              class="hero-watch-img"
+              max-width="1150"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="about-us section" id="about-us">
+        <div class="container about-us-container">
+          <div class="about-us-wrapper">
+            <h2 class="about-us-title">About Us</h2>
+            <ul>
+              <li class="about-us-text">
+                <p>
+                  Welcome to our premium watch collection, where luxury and
+                  style meet functionality and precision. Our selection of
+                  timepieces embodies the very best in Swiss craftsmanship and
+                  engineering, ensuring that you'll always have a reliable and
+                  stylish accessory on your wrist.
+                </p>
+              </li>
+              <li class="about-us-text">
+                <p>
+                  At our premium watch collection, we believe that a watch is
+                  more than just a timekeeping device - it's a statement piece
+                  that reflects your personality and style. So why settle for
+                  anything less than the best?
+                </p>
+              </li>
+            </ul>
+            <button class="about-us-btn" type="button">View catalog</button>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/about_pc.jpg 1x, ./img/about_pc@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/about_tab.jpg 1x, ./img/about_tab@2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/about_mob.jpg 1x, ./img/about_mob@2x.jpg 2x"
+            />
+            <img src="./img/about_mob.jpg" alt="watch" max-width="704px" />
+          </picture>
+        </div>
+      </section>
+      <section class="catalog section" id="catalog">
+        <div class="container">
+          <h2 class="catalog-title">Catalog</h2>
+          <div class="catalog-wrapper">
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-1@2x.png 2x"
+                  />
+                  <img
+                    src="./img/catalog-1.png"
+                    alt="Garmin Fenix 7X Pro Sapphire Solar "
+                  />
+                </picture>
+                <h3
+                  class="catalog-item-title"
+                  title="Garmin Fenix 7X Pro Sapphire Solar"
+                >
+                  Garmin Fenix 7X Pro Sapphire Solar
+                </h3>
+                <p class="catalog-price">€500</p>
+              </li>
+              <li class="catalog-item">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-2@2x.png 2x"
+                  />
+                  <img src="./img/catalog-2.png" alt="Garmin Marq Athlete" />
+                </picture>
+                <h3 class="catalog-item-title">Garmin Marq Athlete</h3>
+                <p class="catalog-price">€450</p>
+              </li>
+              <li class="catalog-item">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-3@2x.png 2x"
+                  />
+                  <img src="./img/catalog-3.png" alt="Garmin Descent MK1" />
+                </picture>
+                <h3 class="catalog-item-title">Garmin Descent MK1</h3>
+                <p class="catalog-price">€680</p>
+              </li>
+              <li class="catalog-item">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-4@2x.png 2x"
+                  />
+                  <img src="./img/catalog-4.png" alt="Garmin D2 Delta PX" />
+                </picture>
+                <h3 class="catalog-item-title">Garmin D2 Delta PX</h3>
+                <p class="catalog-price">€380</p>
+              </li>
+              <li class="catalog-item hidden">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-5@2x.png 2x"
+                  />
+                  <img
+                    src="./img/catalog-5.png"
+                    alt="Garmin Fenix 6 Pro Solar"
+                  />
+                </picture>
+                <h3 class="catalog-item-title">Garmin Fenix 6 Pro Solar</h3>
+                <p class="catalog-price">€400</p>
+              </li>
+              <li class="catalog-item hidden">
+                <picture>
+                  <source
+                    media="(min-resolution: 192dpi)"
+                    srcset="./img/catalog-6@2x.png 2x"
+                  />
+                  <img
+                    src="./img/catalog-6.png"
+                    alt="Tube Watch S42 Date Steel With Black Case"
+                  />
+                </picture>
+                <h3
+                  class="catalog-item-title"
+                  title="Tube Watch S42 Date Steel With Black Case"
+                >
+                  Tube Watch S42 Date Steel With Black Case
+                </h3>
+                <p class="catalog-price">€395</p>
+              </li>
+            </ul>
+            <button type="button" class="catalog-btn" id="show-more">
+              Show more
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="cta section">
+        <div class="container cta-container">
+          <h2 class="cta-title">
+            Choose <span class="cta-accent">your story</span>, making every
+            moment unique. Time is your style, and we reveal it.
+          </h2>
+          <button class="cta-btn" type="button">Contact Us</button>
+        </div>
+      </section>
+    </main>
+    <div data-mobile-menu class="mobile-menu">
+      <div class="container">
+        <button data-mobile-close class="mobile-menu-close-btn">
+          <svg class="mobile-close-icon" width="34" height="34">
+            <use href="./img/sprite.svg#x"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a href="#home" class="mobile-nav-link current">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#aboutus" class="mobile-nav-link">About Us</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#catalog" class="mobile-nav-link">Catalog</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#sale" class="mobile-nav-link">Sale</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#reviews" class="mobile-nav-link">Reviews</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#contactus" class="mobile-nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-socials">
+          <li>
+            <a href="facebook.com" class="mobile-socials-icon">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="instagram.com" class="mobile-socials-icon">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com" class="mobile-socials-icon">
+              <svg width="18" height="18">
+                <use href="./img/sprite.svg#yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div data-tablet-menu class="tablet-menu">
+      <div class="container">
+        <button data-tablet-close class="tablet-menu-close-btn">
+          <svg class="tablet-close-icon" width="40" height="40">
+            <use href="./img/sprite.svg#x"></use>
+          </svg>
+        </button>
+        <nav class="tablet-nav">
+          <ul class="tablet-nav-list">
+            <li class="tablet-nav-item">
+              <a href="#home" class="tablet-nav-link current">Home</a>
+            </li>
+            <li class="tablet-nav-item">
+              <a href="#about-us" class="tablet-nav-link">About Us</a>
+            </li>
+            <li class="tablet-nav-item">
+              <a href="#catalog" class="tablet-nav-link">Catalog</a>
+            </li>
+            <li class="tablet-nav-item">
+              <a href="#sale" class="tablet-nav-link">Sale</a>
+            </li>
+            <li class="tablet-nav-item">
+              <a href="#reviews" class="tablet-nav-link">Reviews</a>
+            </li>
+            <li class="tablet-nav-item">
+              <a href="#contactus" class="tablet-nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="tablet-socials">
+          <li>
+            <a href="facebook.com" class="tablet-socials-icon">
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="instagram.com" class="tablet-socials-icon">
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#ig"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="youtube.com" class="tablet-socials-icon">
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#yt"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/show-more.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
