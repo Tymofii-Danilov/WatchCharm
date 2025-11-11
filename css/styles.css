@@ -1041,3 +1041,26 @@ button {
   }
 }
 /* #endregion */
+
+/* Фіксований хедер */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff; /* або твій фон */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease;
+  transform: translateY(0);
+}
+
+/* Ховаємо хедер */
+.header.hide {
+  transform: translateY(-100%);
+}
+
+/* Щоб контент не ховався під фіксованим хедером */
+main {
+  padding-top: 52px; /* або висота твого хедера */
+}
