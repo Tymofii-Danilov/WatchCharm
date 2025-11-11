@@ -162,7 +162,9 @@
                 </p>
               </li>
             </ul>
-            <button class="about-us-btn" type="button">View catalog</button>
+            <button class="about-us-btn" type="button">
+              <a href="#catalog">View catalog</a>
+            </button>
           </div>
           <picture>
             <source
@@ -187,7 +189,7 @@
           <div class="catalog-wrapper">
             <ul class="catalog-list">
               <li class="catalog-item">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-1@2x.png 2x"
@@ -206,7 +208,7 @@
                 <p class="catalog-price">€500</p>
               </li>
               <li class="catalog-item">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-2@2x.png 2x"
@@ -217,7 +219,7 @@
                 <p class="catalog-price">€450</p>
               </li>
               <li class="catalog-item">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-3@2x.png 2x"
@@ -228,7 +230,7 @@
                 <p class="catalog-price">€680</p>
               </li>
               <li class="catalog-item">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-4@2x.png 2x"
@@ -239,7 +241,7 @@
                 <p class="catalog-price">€380</p>
               </li>
               <li class="catalog-item hidden">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-5@2x.png 2x"
@@ -253,7 +255,7 @@
                 <p class="catalog-price">€400</p>
               </li>
               <li class="catalog-item hidden">
-                <picture>
+                <picture class="catalog-img">
                   <source
                     media="(min-resolution: 192dpi)"
                     srcset="./img/catalog-6@2x.png 2x"
@@ -287,6 +289,96 @@
           <button class="cta-btn" type="button">Contact Us</button>
         </div>
       </section>
+      <section class="sale section" id="sale">
+        <div class="container">
+          <h2 class="sale-title">Sale</h2>
+          <div class="sale-wrapper">
+            <div class="sale-img-wrapper">
+              <ul class="sale-thumbnails">
+                <li class="sale-thumbnails-item">
+                  <img
+                    src="./img/sale-1.png"
+                    alt="watch-1"
+                    class="thumb active"
+                    width="52"
+                  />
+                </li>
+                <li class="sale-thumbnails-item">
+                  <img
+                    src="./img/sale-2.png"
+                    alt="watch-2"
+                    class="thumb"
+                    width="52"
+                  />
+                </li>
+                <li class="sale-thumbnails-item">
+                  <img
+                    src="./img/sale-3.png"
+                    alt="watch-3"
+                    class="thumb"
+                    width="52"
+                  />
+                </li>
+                <li class="sale-thumbnails-item">
+                  <img
+                    src="./img/sale-4.png"
+                    alt="watch-4"
+                    class="thumb"
+                    width="52"
+                  />
+                </li>
+              </ul>
+              <div class="sale-main-img">
+                <img
+                  src="./img/sale-1.png"
+                  alt="sale-watch"
+                  width="235"
+                  id="mainImage"
+                  class="main-image"
+                />
+              </div>
+            </div>
+            <div class="sale-info">
+              <h3 class="sale-info-title">
+                MARQ&reg; Commander (Gen 2) - Carbon Edition
+              </h3>
+              <p class="product-tag">Product tag: 706587</p>
+              <div class="price">
+                <p class="sale-price">€1500</p>
+                <p class="actual-price">€3000</p>
+              </div>
+              <p class="sale-text">
+                The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
+                smartwatch for adventurers that takes materials and features to
+                the next level. The body of the watch is made of very durable
+                Fused Carbon Fiber material and has a precise AMOLED touch
+                screen. The sensitive touch screen is complemented by buttons
+                that can be used in any conditions.
+              </p>
+              <ul class="tags-list">
+                <li class="tags-item">
+                  <p>Fused carbon fiber</p>
+                </li>
+                <li class="tags-item">
+                  <p>Grade-5 Titanuim</p>
+                </li>
+                <li class="tags-item">
+                  <p>Athlete</p>
+                </li>
+                <li class="tags-item">
+                  <p>Golfer</p>
+                </li>
+                <li class="tags-item">
+                  <p>Commander</p>
+                </li>
+                <li class="tags-item">
+                  <p>Adventurer</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <div data-mobile-menu class="mobile-menu">
       <div class="container">
@@ -301,7 +393,7 @@
               <a href="#home" class="mobile-nav-link current">Home</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="#aboutus" class="mobile-nav-link">About Us</a>
+              <a href="#about-us" class="mobile-nav-link">About Us</a>
             </li>
             <li class="mobile-nav-item">
               <a href="#catalog" class="mobile-nav-link">Catalog</a>
@@ -313,7 +405,7 @@
               <a href="#reviews" class="mobile-nav-link">Reviews</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="#contactus" class="mobile-nav-link">Contact Us</a>
+              <a href="#contact-us" class="mobile-nav-link">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -398,5 +490,6 @@
     </div>
     <script src="./js/show-more.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/sale.js"></script>
   </body>
 </html>
